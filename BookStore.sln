@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagerAPI", "BookManagerAPI\BookManagerAPI.csproj", "{6AF2AEAD-430D-4E30-8EED-AA55A27EE125}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{56D9FA64-046D-43A8-9577-2E12BA020E39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Manifest", "Manifest", "{1631AD12-48BB-4804-A6F7-C403ECA2F3E7}"
+	ProjectSection(SolutionItems) = preProject
+		Manifest\api.yaml = Manifest\api.yaml
+		Manifest\db-config.yaml = Manifest\db-config.yaml
+		Manifest\db-secret.yaml = Manifest\db-secret.yaml
+		Manifest\db.yaml = Manifest\db.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagerAPI_Test", "BookManagerAPI_Test\BookManagerAPI_Test.csproj", "{DA04E38F-D2D3-40BC-9B17-7C1A68275BD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AF2AEAD-430D-4E30-8EED-AA55A27EE125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF2AEAD-430D-4E30-8EED-AA55A27EE125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF2AEAD-430D-4E30-8EED-AA55A27EE125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF2AEAD-430D-4E30-8EED-AA55A27EE125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D9FA64-046D-43A8-9577-2E12BA020E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D9FA64-046D-43A8-9577-2E12BA020E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D9FA64-046D-43A8-9577-2E12BA020E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D9FA64-046D-43A8-9577-2E12BA020E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA04E38F-D2D3-40BC-9B17-7C1A68275BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA04E38F-D2D3-40BC-9B17-7C1A68275BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA04E38F-D2D3-40BC-9B17-7C1A68275BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA04E38F-D2D3-40BC-9B17-7C1A68275BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3543F5E-0082-4C3F-B65D-F22392D1FA6E}
+	EndGlobalSection
+EndGlobal

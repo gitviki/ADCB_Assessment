@@ -1,0 +1,31 @@
+version: '3.4'
+
+networks:
+  backend:
+
+services:
+  bookmanagerdb:
+    container_name: bookmanager-db
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Qwerty@123
+    networks:
+      - backend
+    ports:
+      - 4001:1433
+  bookmanagerapi:
+    container_name: bookmanager-api
+    image: ${DOCKER_REGISTRY-}bookmanagerapi
+    build:
+      context: .
+      dockerfile: BookManagerAPI/Dockerfile
+    environment:
+      - DB_HOST=bookmanagerdb
+      - DB_NAME=BookManager
+      - DB_USERNAME=sa
+      - DB_PASSWORD=Qwerty@123
+    networks:
+      - backend
+    ports:
+      - 4002:80
